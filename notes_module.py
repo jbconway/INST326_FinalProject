@@ -1,4 +1,4 @@
-class Note():
+class BaseNote():
     def __init__(self, note_dict = None): 
         if note_dict is not None:
 
@@ -8,33 +8,32 @@ class Note():
             self.link = note_dict['link']
             self.tags = note_dict['tags']
             self.meta = note_dict['meta']
+            self.note_id = note_dict["note_id"]
+            self.author = note_dict["author"]
         else:
             self.title = "title"
             self.text = ""
             self.link = ""
             self.tags = ""
             self.meta = ""
+            self.note_id = 0
+            self.author = ""
 
     def to_dictionary(self):
-        dict = {"title":self.title,"text":self.text,"link":self.link,"tags":self.tags,"meta":self.meta}
+        dict = {"note_id":self.note_id,"title":self.title,"text":self.text,"link":self.link,"tags":self.tags,"meta":self.meta, "author":self.author}
         return dict
 
-class Snippet():
+class Note(BaseNote):
     def __init__(self, note_dict = None): 
+        super().__init__(note_dict)
         if note_dict is not None:
-
-            # define note attributes
-            self.title = note_dict['title']
             self.snippet = note_dict['snippet']
-            self.meta = note_dict['meta']
-            self.language = note_dict["language"]
         else:
-            self.title = "title"
             self.snippet = ""
-            self.meta = ""
-            self.language = "python"
+
     def to_dictionary(self):
-        dict = {"title":self.title,"snippet":self.snippet,"meta":self.meta,"language":self.language}
+        dict = super().to_dictionary()
+        dict["snippet"] = self.snippet
         return dict
 
 
