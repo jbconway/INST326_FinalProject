@@ -35,5 +35,6 @@ class Note(BaseNote):
         dict = super().to_dictionary()
         dict["snippet"] = self.snippet
         return dict
+    
 
 

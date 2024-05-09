@@ -1,0 +1,12 @@
+[
+  {
+    "note_id": "0",
+    "title": "new note title",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet suscipit mi, non porttitor mauris. Aliquam in lorem risus. Proin mauris mauris, varius ac vulputate sed, tempor nec lacus. Morbi sodales turpis in placerat semper. Donec bibendum blandit ante sit amet hendrerit.",
+    "link": "If there is a link with this note enter it here.",
+    "tags": "enter hashtags here",
+    "meta": "note_id 0 created 2024-05-08 21:54:26.022095, Eastern Daylight Time by name of author",
+    "author": "name of author",
+    "snippet": "print(\"hello world\")"
+  }
+]
