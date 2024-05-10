@@ -1,12 +1,102 @@
 [
   {
     "note_id": "0",
-    "title": "new note title",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sit amet suscipit mi, non porttitor mauris. Aliquam in lorem risus. Proin mauris mauris, varius ac vulputate sed, tempor nec lacus. Morbi sodales turpis in placerat semper. Donec bibendum blandit ante sit amet hendrerit.",
-    "link": "If there is a link with this note enter it here.",
-    "tags": "enter hashtags here",
-    "meta": "note_id 0 created 2024-05-08 21:54:26.022095, Eastern Daylight Time by name of author",
-    "author": "name of author",
-    "snippet": "print(\"hello world\")"
+    "title": "opening/close files in python",
+    "text": "To open and close a file in python, use the open() function to initiate file operations and specify the file name and access mode. Access modes include read-only (\u201cr\u201d), read and write(\u201cr+\u201d), write- only (\u201cw\u201d), write and read (w+), append-only (\u201ca\u201d), and append and read (\u201ca+\u201d). The file should exist in the same directory as the Python script unless specifying the full file path. After, make sure to close the file using the close() method to prevent unintended modifications.",
+    "link": "https://www.geeksforgeeks.org/how-to-open-and-close-a-file-in-python/",
+    "tags": "#openFiles #pythonIO #FileIO",
+    "meta": "note_id 0 created 2024-05-10 00:12:49.035072, Eastern Daylight Time by Jillian Conway",
+    "author": "Jillian Conway",
+    "snippet": ""
+  },
+  {
+    "note_id": "2",
+    "title": "using dictionaries ",
+    "text": "Dictionaries in Python store data in key-value pairs, providing an ordered and changeable collection. Dictionaries maintain the order of insertion, ensuring consistency in iteration. Additionally, dictionaries do not allow duplicate keys, with duplicate key assignments resulting in overwriting existing values.",
+    "link": "https://www.w3schools.com/python/python_dictionaries.asp",
+    "tags": "#python #pythonDictionary #DataStructures",
+    "meta": "note_id 2 created 2024-05-10 00:13:37.551770, Eastern Daylight Time by Jillian Conway",
+    "author": "Jillian Conway",
+    "snippet": ""
+  },
+  {
+    "note_id": "3",
+    "title": "Structuring a repository",
+    "text": "To structure a Python repository effectively, organize it with folders for documentation, source code, tests, and examples. Utilize setup files like setup.py and setup.cfg to define installation instructions and metadata for the package. Include a requirements.txt file listing development dependencies, a README.rst file for project information, and a .gitignore file to specify which files Git should ignore. Additionally, configure a tox.ini file for running unit tests across multiple Python versions using tox, ensuring code compatibility and reliability.",
+    "link": "https://github.com/yngvem/python-project-structure?tab=readme-ov-file#structuring-a-repository",
+    "tags": "#GitHub #Repo #Python",
+    "meta": "note_id 3 created 2024-05-10 00:14:25.346840, Eastern Daylight Time by Jillian Conway",
+    "author": "Jillian Conway",
+    "snippet": ""
+  },
+  {
+    "note_id": "4",
+    "title": "Using Classes and Inheritance",
+    "text": "Classes are the blueprints for creating objects and defining behaviors. Inheritance allows us to create another class that can inherit the methods from another class. There is the parent class (the original base class) and a child class which inherits from the parent. This creates a more efficient program because you can reuse code instead of repeating large sections of code over and over again.",
+    "link": "https://www.w3schools.com/python/python_inheritance.asp",
+    "tags": "#OOP #Classes #Inheritance ",
+    "meta": "note_id 4 created 2024-05-10 00:15:08.848992, Eastern Daylight Time by Jillian Conway",
+    "author": "Jillian Conway",
+    "snippet": ""
+  },
+  {
+    "note_id": "5",
+    "title": "Using Polymorphism in Python",
+    "text": "Polymorphism is a pillar of abstraction. It allows programmers to use the same function or behavior to be carried on different objects that have a similarity. This allows for code to be reused and simplified a program. The function len() isone example of the use of polymorphism.",
+    "link": "https://www.w3schools.com/python/python_polymorphism.asp",
+    "tags": "#OOP #Polymorphism #Abstraction",
+    "meta": "note_id 5 created 2024-05-10 00:15:54.177535, Eastern Daylight Time by Jillian Conway",
+    "author": "Jillian Conway",
+    "snippet": "x = \"Hello World!\"\nprint(len(x))"
+  },
+  {
+    "note_id": "6",
+    "title": "Reading and Writing JSON Files in Python",
+    "text": "Python provides built-in support for working with JSON file using the json module. You can use json.load() to read JSON data from a file and json.dump() to write JSON data to a file. This module simplifies the process of handling JSON data and provides an easy way to parse, manipulate, and generate JSON data.",
+    "link": "https://www.w3schools.com/python/python_json.asp",
+    "tags": "#Python #JSON #FileIO",
+    "meta": "note_id 6 created 2024-05-10 00:17:00.899755, Eastern Daylight Time by ",
+    "author": "",
+    "snippet": "import json\ndata = {\"name\": \"John\", \"age\": 30}\nwith open('data.json', 'w') as file:\n    json.dump(data, file)\nwith open('data.json', 'r') as file:\n    data = json.load(file)\nprint(data)"
+  },
+  {
+    "note_id": "7",
+    "title": "Iterating through Python Lists",
+    "text": "Iterating through lists is a common operation in Python, achieved using for-loops. By iterating, you can access each element in the list and perform operations such as filtering, mapping, or aggregating data. Python's list comprehension provides a concise way to create new lists based on existing lists.",
+    "link": "https://www.w3schools.com/python/python_lists_loop.asp",
+    "tags": " #Iteration #Lists #Python",
+    "meta": "note_id 7 created 2024-05-10 00:17:44.924505, Eastern Daylight Time by Jillian Conway",
+    "author": "Jillian Conway",
+    "snippet": "my_list = [1, 2, 3, 4, 5]\nfor item in my_list:\n    print(item)"
+  },
+  {
+    "note_id": "8",
+    "title": "Python Error Handling with Try-Except Blocks",
+    "text": "In Python, error handling can be achieved using try-except blocks to catch and manage exceptions that may occur during code execution. This structure helps you gracefully handle unexpected situations, such as invalid user input or file operation errors. By using try-except blocks, you can prevent your program from crashing and provide meaningful error messages to the user.",
+    "link": " https://realpython.com/python-exceptions/",
+    "tags": "#ErrorHandling #TryExcept #Python",
+    "meta": "note_id 8 created 2024-05-10 00:18:11.726971, Eastern Daylight Time by Jillian Conway",
+    "author": "Jillian Conway",
+    "snippet": ""
+  },
+  {
+    "note_id": "9",
+    "title": "Understanding List Comprehensions in Python",
+    "text": "List comprehensions in Python provide a concise way to create lists by iterating over an iterable and applying conditions or transformations. This approach can simplify code and improve readability. List comprehensions are a powerful and expressive way to generate lists based on existing data.",
+    "link": "https://www.w3schools.com/python/python_lists_comprehension.asp",
+    "tags": "#Python #ListComprehension #DataManipulation",
+    "meta": "note_id 9 created 2024-05-10 00:18:56.891219, Eastern Daylight Time by Jillian Conway",
+    "author": "Jillian Conway",
+    "snippet": "numbers = [1, 2, 3, 4, 5]\nsquares = [num ** 2 for num in numbers]\nprint(squares)  # Output: [1, 4, 9, 16, 25]"
+  },
+  {
+    "note_id": "10",
+    "title": "Using Lambda Functions in Python",
+    "text": "Lambda functions are anonymous functions in Python that allow you to define small, one-liner functions without needing a formal function definition. These functions are useful for short, simple operations, such as filtering or transforming data in list comprehensions or other iterable operations. Lambda functions enhance code readability and can simplify function usage in cases where you only need a function temporarily.",
+    "link": "https://www.w3schools.com/python/python_lambda.asp",
+    "tags": "#Python #LambdaFunctions #AnonymousFunctions\n",
+    "meta": "note_id 10 created 2024-05-10 00:19:30.461593, Eastern Daylight Time by Jillian Conway",
+    "author": "Jillian Conway",
+    "snippet": "numbers = [1, 2, 3, 4, 5]\nsquared_numbers = list(map(lambda x: x ** 2, numbers))\nprint(squared_numbers)  # Output: [1, 4, 9, 16, 25]"
   }
 ]
